@@ -3,11 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Manojkumar-vnb/Agile_Midterm.git'
-            }
-        }
 
         stage('Build') {
             steps {
