@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build & Test') {
+            steps {
+                // This command runs your JUnit tests in Jenkins
+                sh 'mvn clean test'
+            }
+        }
+    }
+}
